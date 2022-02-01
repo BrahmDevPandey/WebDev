@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+
+<body>
+    Some entities in HTML are written below Hello &aacute; &CircleTimes; &SmallCircle; &circlearrowleft;
+    <button onclick="crash()">Don't click this button. Clicling this will crash your browser</button>
+    <script>
+        function crash() {
+            setInterval(() => {
+                document.body.textContent = document.body.textContent + "Hello &copy;" + '\n';
+
+            }, 10);
+        }
+    </script>
+</body>
+
+</html>

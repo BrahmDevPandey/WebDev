@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Styling</title>
+
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .container {
+            background-color: rgb(223, 240, 187);
+            border: 2px red solid;
+            margin: 35px auto;
+            padding: 35px;
+            width: 666px;
+        }
+        
+        p {
+            font-size: 20px;
+            text-align: justify;
+        }
+        
+        button {
+            align-self: baseline;
+            font-size: 20px;
+            border: none;
+            background-color: rgb(226 54 54);
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            font-variant: small-caps;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        a {
+            font-size: 20px;
+            border: none;
+            text-decoration: none;
+            background-color: rgb(226 54 54);
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        
+        a:visited {
+            background-color: purple;
+        }
+        
+        a:active {
+            background-color: blue;
+        }
+        
+        a:hover {
+            background-color: red;
+        }
+        
+        button:visited {
+            background-color: purple;
+        }
+        
+        button:active {
+            background-color: blue;
+        }
+        
+        button:hover {
+            background-color: red;
+        }
+        /* experimental */
+        
+        p:hover {
+            background-color: rgb(213, 238, 159);
+        }
+        
+        p:active {
+            background-color: rgb(177, 177, 236);
+        }
+    </style>
+
+    <script>
+        function popup() {
+            if (window.confirm("Clicked a paragraph"))
+                window.alert("Thanx dude. ;)")
+            else
+                window.alert("You rejected, man! :(")
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h2>First Para</h2>
+        <p onclick="popup()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae corporis, nam quos quaerat quod est dicta tenetur expedita facilis nulla aspernatur consequuntur laudantium? Optio ullam assumenda ut, minus illum quasi?</p>
+        <a href="./files/init.svg">Read More</a>
+        <button>Contact Us</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Pseudo Selectors</title>
+
+    <style>
+        h2 {
+            color: black;
+            background-color: red;
+            text-align: center;
+        }
+        
+        p {
+            color: red;
+            background-color: yellowgreen;
+            font-size: 30px;
+            text-align: center;
+            display: none;
+        }
+        /* div p {
+            display: block;
+        }
+         */
+        /* div+p {
+            display: block;
+        } */
+        /*         
+        div>p {
+            display: block;
+        }
+        /*  */
+        
+        body>p {
+            display: block;
+            font-size: 5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>More on pseudo Selectors</h2>
+    <div class="container">
+        <div>
+            <p>This para is inside a div and a div</p>
+        </div>
+        <p>This para is inside a div</p>
+    </div>
+    <p>This para is outside of div</p>
+</body>
+
+</html>

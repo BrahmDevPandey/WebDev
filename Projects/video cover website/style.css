@@ -1,0 +1,70 @@
+    body {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .upperbars {
+        margin: 50px 50px 1px 50px;
+    }
+    
+    .bar {
+        width: 32%;
+        height: 12px;
+        display: inline-block;
+        margin: 2px;
+    }
+    
+    #bar1 {
+        background-color: #152b5a;
+    }
+    
+    #bar2 {
+        background-color: rgb(93, 161, 173);
+    }
+    
+    #bar3 {
+        background-color: rgb(94, 101, 117);
+    }
+    
+    #titleStrip {
+        margin: 1px 50px 1px 52px;
+        padding: 30px;
+        width: 85.7%;
+        height: 75px;
+        background-color: #152b5a;
+        color: white;
+        text-transform: uppercase;
+        font-size: 36px;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        line-height: 3.5em;
+    }
+    
+    .mainContent {
+        margin: 50px;
+    }
+    
+    #pointsText {
+        font-size: 30px;
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        display: inline-block;
+        position: absolute;
+        top: 322px;
+        left: 85px;
+        line-height: 2em;
+    }
+    
+    #pointsText li {
+        color: rgb(66, 178, 223);
+    }
+    
+    .listItems {
+        color: black;
+    }
+    
+    .mainContent img {
+        display: inline;
+        position: absolute;
+        top: 275px;
+        right: 150px;
+    }

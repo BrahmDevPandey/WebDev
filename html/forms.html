@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h2>
+        An HTML Form
+    </h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text">
+        </div>
+        <div>
+            Phone number: <input type="number">
+        </div>
+        <div>
+            Email id: <input type="email">
+        </div>
+        <div>
+            Date of Birth: <input type="date">
+        </div>
+        <div>
+            Are you a developer? <input type="checkbox" checked>
+        </div>
+        <div>
+            Your favourite color: <input type="color">
+        </div>
+        <div>
+            Enter your password: <input type="password">
+        </div>
+        <div>
+            Gender: Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other <input type="radio" name="gender">
+        </div>
+        <div>
+            Write something about youself:
+            <br>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+        </div>
+        <label for="state">State of residence</label>
+        <div>
+            <select name="state" id="state">
+                <option value="" selected>--select--</option>
+                <option value="" >Uttar Pradesh</option>
+                <option value="">Uttarakhand</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Assam</option>
+                <option value="">Delhi</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

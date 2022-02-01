@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+        
+        #box1 {
+            background-color: red;
+            position: relative;
+            top: 10px;
+            z-index: 2;
+        }
+        
+        #box2 {
+            background-color: green;
+            visibility: visible;
+            position: relative;
+            top: -10px;
+            z-index: 1;
+        }
+        
+        #box3 {
+            background-color: yellow;
+        }
+        
+        #box4 {
+            background-color: blue;
+        }
+        
+        button.visibility {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+        
+        button.display {
+            position: absolute;
+            bottom: 50px;
+            right: 200px;
+        }
+    </style>
+
+    <script>
+        function changeVisibility() {
+            var box = document.getElementById("box2")
+            if (box.getAttribute("visibility").toString() != "hidden")
+                box.setAttribute("visibility", "hidden !important")
+            else
+                box.setAttribute("visibility", "visible")
+        }
+
+        function changeDisplay() {
+            var box = document.getElementById("box2")
+            if (box.getAttribute("display").toString() == "block")
+                box.setAttribute("display", "none")
+            else
+                box.setAttribute("display", "block")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <button class="visibility" onclick="changeVisibility()">Change visibility</button>
+    <button class="display" onclick="changeDisplay()">Change display</button>
+</body>
+
+</html>
