@@ -1,0 +1,99 @@
+[8:24 pm, 05/01/2023] Adarsh Baghel ISPG: DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+
+        }
+
+        .form {
+            position: absolute;
+            top: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .7);
+            width: 400px;
+            background-color: yellow;
+            border-radius: 11px;
+        }
+
+        .input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            border: none;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        .input::placeholder {
+            color: ;
+        }
+
+        .list {
+            padding: 0;
+            margin: 0;
+        }
+
+        .list li {
+            list-style-type: none;
+            padding: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-top: dotted;
+            border-color: darkgray;
+        }
+
+        .list li .fa-trash {
+            color: red;
+            position: absolute;
+            right: 10px;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        .list li .fa-check {
+            color: green;
+            position: absolute;
+            right: 43px;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        .list li .checked {
+            color: lightgreen;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form">
+        <input type="text" class="input" placeholder="Enter Your Task" autocomplete="off">
+        <ul class="list">
+            <li class="checked">Buy Milk
+                <i class="fa-sharp fa-solid fa-check"></i>
+                <i class="fa-sharp fa-solid fa-trash"></i>
+            </li>
+            <li class="">Buy diapers
+                <i id="check1" class="fa-sharp fa-solid fa-check"></i>
+                <i class="fa-sharp fa-solid fa-trash"></i>
+            </li>
+        </ul>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
